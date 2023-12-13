@@ -8,6 +8,6 @@ WORKDIR ./boxfuse-sample-java-war-hello
 RUN ls -l 
 RUN mvn package
 RUN ls -l /usr/local/tomcat
-RUN cp ./target/hello-1.0.war ./webapp
-RUN ls -l ./webapp/webapp
+RUN cp ./target/hello-1.0.war /usr/local/tomcat
+RUN ls -l ./webapp
 
