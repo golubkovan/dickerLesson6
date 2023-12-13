@@ -6,6 +6,7 @@ RUN apt install maven -y
 RUN apt install git -y
 RUN mkdir /tmp/demo
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
+RUN ls -l
 RUN cd ./boxfuse-sample-java-war-hello.git
 RUN mvn package
 RUN cd ./target
