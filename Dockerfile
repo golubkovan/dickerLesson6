@@ -9,5 +9,5 @@ RUN ls -l
 RUN mvn package
 RUN ls -l /usr/local/tomcat
 RUN cp ./target/hello-1.0.war ./webapp
-RUN ls -l ./webapp
+RUN ls -l ./webapp/webapp
 
