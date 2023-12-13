@@ -9,8 +9,7 @@ RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 WORKDIR /boxfuse-sample-java-war-hello
 RUN ls -l 
 RUN mvn package
-WORKDIR /target
 RUN ls -l
-RUN cp hello-1.0.war /var/lib/tomcat9/webapp
+RUN cp /traget/hello-1.0.war /var/lib/tomcat9/webapp
 CMD [ "executable" ]
 EXPOSE 8080
